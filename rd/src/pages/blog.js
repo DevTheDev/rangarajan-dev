@@ -9,10 +9,7 @@ const Blog = ({ data }) => (
   <Layout>
     <Head pageTitle={data.blogJson.title} />
     <Box>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: data.blogJson.content.childMarkdownRemark.html,
-        }}
+      <div dangerouslySetInnerHTML={{__html: data.blogJson.content.childMarkdownRemark.html,}}
       />
     </Box>
   </Layout>

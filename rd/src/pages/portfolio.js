@@ -13,7 +13,7 @@ const Index = ({ data }) => (
       <Title as="h2" size="large">
         {data.portfolioJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
-      <Link to="portfolio/agrarian">Project Agrarian</Link>
+      <Link to="agrarian">Project Agrarian</Link>
     </Box>
   </Layout>
 );

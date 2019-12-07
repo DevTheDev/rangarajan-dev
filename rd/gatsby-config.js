@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     ...siteConfig,
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,

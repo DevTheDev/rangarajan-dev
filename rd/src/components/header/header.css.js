@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {toolbar} from 'constants/theme';
+import {emphasis} from 'constants/theme';
 
 export const Container = styled.header`
   display: flex;
@@ -7,12 +9,12 @@ export const Container = styled.header`
   padding: 4rem;
 
   a {
-    color: #757575;
+    color: ${toolbar};
     transition: color 0.2s ease;
     text-decoration: none;
-
+    font-size: 3.4rem;
     &:hover {
-      color: inherit;
+      color: ${emphasis};
     }
   }
 `;

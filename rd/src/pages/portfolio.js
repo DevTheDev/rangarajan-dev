@@ -10,7 +10,7 @@ import { Link } from 'gatsby';
 const Index = ({ data }) => (
   <Layout>
     <Box>
-      <Title as="h2" size="large">
+      <Title>
         {data.portfolioJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
       <Link to="agrarian">Project Agrarian</Link>

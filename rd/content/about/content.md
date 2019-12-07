@@ -1,1 +1,1 @@
-This is my porfolio website. Eventually there will be a dynamic timeline here.
+This is my portfolio website. Eventually there will be a dynamic timeline here.

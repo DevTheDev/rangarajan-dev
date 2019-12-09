@@ -1,9 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import Layout from 'components/Layout'
-import { StyledContentCenterWrapper } from 'components/SharedStyledComponents'
-import ArtDirectedFullBackground from 'components/backgroundArt'
+import { StyledContentCenterWrapper } from 'components/SharedStyledComponents';
+import ArtDirectedFullBackground from 'components/backgroundArt';
 
 const StyledCenterWrapper = styled(StyledContentCenterWrapper)`
   max-width: 800px;

@@ -13,8 +13,8 @@ import { StyledFullScreenWrapper } from 'components/SharedStyledComponents';
  * @return {*}
  * @constructor
  */
-const ArtDirectedFullBackground = ({ className, children }) => {
-  const { desktop, medium, small } = useStaticQuery(
+const ArtDirectedFullBackground = ({ className, children, desktopImagePath, mobileImagePath }) => {
+  const { desktop, small } = useStaticQuery(
     graphql`
       query {
         desktop: file(relativePath: { eq: "images/farm.jpg" }) {
@@ -24,14 +24,7 @@ const ArtDirectedFullBackground = ({ className, children }) => {
             }
           }
         }
-        medium: file(relativePath: { eq: "farm.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 1400, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-        small: file(relativePath: { eq: "farm.jpg" }) {
+        small: file(relativePath: { eq: "images/farm.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 490, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
@@ -45,10 +38,6 @@ const ArtDirectedFullBackground = ({ className, children }) => {
   // Art-Direction Array
   const backgroundArtDirectionStack = [
     small.childImageSharp.fluid,
-    {
-      ...medium.childImageSharp.fluid,
-      media: `(min-width: 491px)`,
-    },
     {
       ...desktop.childImageSharp.fluid,
       media: `(min-width: 1401px)`,

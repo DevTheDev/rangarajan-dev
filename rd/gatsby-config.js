@@ -20,6 +20,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
+    `gatsby-background-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-webpack-size`,
     {

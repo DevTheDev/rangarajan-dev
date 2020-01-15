@@ -5,7 +5,6 @@ import Box from 'components/box';
 import Title from 'components/title';
 import Gallery from 'components/gallery';
 import { graphql } from 'gatsby';
-import { emphasis } from 'constants/theme';
 
 const Index = ({ data }) => (
   <Layout>
@@ -14,9 +13,7 @@ const Index = ({ data }) => (
         Hi, I&#39;m Dev.
       </Title>
     </Box>
-    <Box>
-    {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
-    </Box>
+    <Box>{data.homeJson.content.childMarkdownRemark.rawMarkdownBody}</Box>
     <Gallery items={data.homeJson.gallery} />
     <div style={{ height: '50vh' }} />
   </Layout>
@@ -39,7 +36,7 @@ export const query = graphql`
         }
       }
       gallery {
-       title
+        title
        copy
        image {
          childImageSharp {

@@ -2,18 +2,18 @@
   "title": "Home",
   "content": "intro.md",
   "gallery": [{
-    "title": "React Context",
-    "copy": "For global styles.",
-    "image": "../images/farm.jpg"
+    "title": "Bay Area",
+    "copy": "I spent the first 17 years of my life in Sunnyvale, California.",
+    "image": "../images/goldengate.jpg"
   },
   {
-    "title": "Page Transitions",
-    "copy": "Component-based for easy usage.",
-    "image": "../images/gallery/page-transitions.jpg"
+    "title": "Rensselaer Polytechnic Institute",
+    "copy": "Currently a senior at RPI, studying Computer Science with a concentration in AI and Robotics.",
+    "image": "../images/rpi.jpg"
   },
   {
-    "title": "Intersection Observer",
-    "copy": "Including a polyfill for Safari.",
-    "image": "../images/gallery/intersection-observer.jpg"
+    "title": "What's next?",
+    "copy": "I'm looking forward to graduation in May and then finding a way I can use technology to make the world a better place.",
+    "image": "../images/future.jpg"
   }]
 }

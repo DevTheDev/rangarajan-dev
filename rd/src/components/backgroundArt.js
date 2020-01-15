@@ -50,11 +50,11 @@ const ArtDirectedFullBackground = ({ className, children, desktopImagePath, mobi
         Tag="section"
         className={className}
         fluid={backgroundArtDirectionStack}
-        backgroundColor={`#040e18`}
-        title="Art-Directed Fullscreen Background"
+        backgroundColor={`#fff`}
+        title="agrarian"
         id="adfullscreenbg"
         role="img"
-        aria-label="Art-Directed Fullscreen Background"
+        aria-label="Agrarian"
         preserveStackingContext={true}
       >
         {children}

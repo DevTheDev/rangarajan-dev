@@ -6,7 +6,6 @@ import Title from 'components/title';
 import { graphql } from 'gatsby';
 import { Link } from 'gatsby';
 
-
 const Index = ({ data }) => (
   <Layout>
     <Box>

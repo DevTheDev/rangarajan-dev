@@ -1,5 +1,6 @@
 {
   "title": "Agrarian",
   "content": "agrarian.md",
-  "image" : "../images/farm.jpg"
+  "farm" : "../images/farm.jpg",
+  "plate" : "../images/plate.jpg"
 }

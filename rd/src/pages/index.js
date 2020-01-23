@@ -9,7 +9,7 @@ import { graphql } from 'gatsby';
 const Index = ({ data }) => (
   <Layout>
     <Box>
-      <Title as="h2" size='large'>
+      <Title as="h2" size="large">
         Hi, I&#39;m Dev.
       </Title>
     </Box>
@@ -37,15 +37,15 @@ export const query = graphql`
       }
       gallery {
         title
-       copy
-       image {
-         childImageSharp {
-           fluid(maxHeight: 500, quality: 90) {
-             ...GatsbyImageSharpFluid_withWebp
-           }
-         }
-       }
-     }
+        copy
+        image {
+          childImageSharp {
+            fluid(maxHeight: 500, quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
     }
   }
 `;

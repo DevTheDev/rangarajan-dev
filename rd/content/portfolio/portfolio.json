@@ -1,4 +1,26 @@
 {
   "title": "Portfolio",
-  "content": "portfolio.md"
+  "content": "portfolio.md",
+  "projects" : [
+    {
+      "title" : "Project Agrarian",
+      "description" : "A regenerative design approach to telling compelling restaurant stories.",
+      "path" : "agrarian",
+      "image" : "../images/farm.jpg"
+    },
+    {
+      "title" : "C.S.S.A.W.",
+      "description" : "Citizen Science for South African Waters, a project to improve water quantity monitoring in the Limpopo Basin.",
+      "path" : "https://rcos.io/projects/johncs00/c-ssaw/profile",
+      "isExternal" : "external",
+      "image" : "southafrica.jpg"
+    },
+    {
+      "title" : "Dobot Scribe",
+      "description" : "A project to make a 3 dof dobot draw letters using computer vision",
+      "path" : "https://github.com/DevTheDev/DobotScribe",
+      "isExternal" : "external",
+      "image" : "robot.jpg"
+    }
+  ]
 }

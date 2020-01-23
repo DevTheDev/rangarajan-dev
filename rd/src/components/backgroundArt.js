@@ -13,7 +13,12 @@ import { StyledFullScreenWrapper } from 'components/SharedStyledComponents';
  * @return {*}
  * @constructor
  */
-const ArtDirectedFullBackground = ({ className, children, desktopImagePath, mobileImagePath }) => {
+const ArtDirectedFullBackground = ({
+  className,
+  children,
+  desktopImagePath,
+  mobileImagePath,
+}) => {
   const { desktop, small } = useStaticQuery(
     graphql`
       query {
@@ -33,16 +38,16 @@ const ArtDirectedFullBackground = ({ className, children, desktopImagePath, mobi
         }
       }
     `
-  )
+  );
 
   // Art-Direction Array
   const backgroundArtDirectionStack = [
     small.childImageSharp.fluid,
     {
       ...desktop.childImageSharp.fluid,
-      media: `(min-width: 1401px)`,
+      media: '(min-width: 1401px)',
     },
-  ]
+  ];
 
   return (
     <StyledFullScreenWrapper>
@@ -50,7 +55,7 @@ const ArtDirectedFullBackground = ({ className, children, desktopImagePath, mobi
         Tag="section"
         className={className}
         fluid={backgroundArtDirectionStack}
-        backgroundColor={`#fff`}
+        backgroundColor={'#fff'}
         title="agrarian"
         id="adfullscreenbg"
         role="img"
@@ -60,8 +65,8 @@ const ArtDirectedFullBackground = ({ className, children, desktopImagePath, mobi
         {children}
       </BackgroundImage>
     </StyledFullScreenWrapper>
-  )
-}
+  );
+};
 
 const StyledFullBackground = styled(ArtDirectedFullBackground)`
   width: 100%;
@@ -69,5 +74,5 @@ const StyledFullBackground = styled(ArtDirectedFullBackground)`
   display: flex;
   align-items: center;
   justify-content: center;
-`
-export default StyledFullBackground
+`;
+export default StyledFullBackground;

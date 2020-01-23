@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import posed from 'react-pose';
 import { Container } from './header.css';
-import Title from 'components/title';
 import Nav from 'components/header/nav';
 
 // Example of a component-specific page transition
@@ -22,12 +21,10 @@ const AnimatedContainer = posed.div({
   },
 });
 
-const Header = ({ title }) => (
+const Header = () => (
   <AnimatedContainer>
     <Container>
-      <Link to="/">
-        DR
-      </Link>
+      <Link to="/">DR</Link>
       <Nav />
     </Container>
   </AnimatedContainer>

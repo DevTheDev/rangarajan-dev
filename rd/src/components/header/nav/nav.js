@@ -15,12 +15,23 @@ const Nav = () => (
         <Link to="/portfolio">Portfolio</Link>
       </li>
       <li>
-        <a href="https://linkedin.com/in/dev-rangarajan" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a
+          href="https://linkedin.com/in/dev-rangarajan"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
       </li>
       <li>
-        <a href="https://github.com/DevTheDev" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a
+          href="https://github.com/DevTheDev"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          GitHub
+        </a>
       </li>
-
     </ul>
   </Container>
 );

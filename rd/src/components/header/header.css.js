@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {toolbar} from 'constants/theme';
-import {emphasis} from 'constants/theme';
+import { toolbar } from 'constants/theme';
+import { emphasis } from 'constants/theme';
 
 export const Container = styled.header`
   display: flex;

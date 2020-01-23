@@ -48,7 +48,13 @@ export const query = graphql`
           rawMarkdownBody
         }
       }
-      farm 
+      farm {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 4160) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
       plate {
         childImageSharp {
           fluid(quality: 100, maxWidth: 4160) {

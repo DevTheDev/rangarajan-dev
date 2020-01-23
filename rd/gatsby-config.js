@@ -6,25 +6,32 @@ module.exports = {
   },
 
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`,
-    `gatsby-transformer-json`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-eslint`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-offline',
+    'gatsby-transformer-json',
+    'gatsby-transformer-remark',
+    'gatsby-plugin-eslint',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `content`,
+        name: 'content',
         path: `${__dirname}/content`,
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-background-image`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-webpack-size`,
+    'gatsby-plugin-sharp',
+    'gatsby-background-image',
+    'gatsby-transformer-sharp',
+    'react-masonry-component',
     {
-      resolve: `gatsby-plugin-react-svg`,
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        sassRuleModulesTest: /.*\.module\.s(a|c)ss$/,
+      },
+    },
+    'gatsby-plugin-webpack-size',
+    {
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /images\/.*\.svg$/,

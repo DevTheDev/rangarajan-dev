@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby';
 import Bio from 'components/blog/bio';
 import Layout from 'components/layout';
 import SEO from 'components/blog/seo';
-import TextBox from 'components/TextBox';
+import TextBox from 'components/textbox';
 import Title from 'components/title';
 import Box from 'components/box';
 

@@ -1,16 +1,21 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: `Dev Rangarajan`,
-  siteTitleShort: `DR`,
-  siteDescription: `This is Dev Rangarajan's Personal website, hosting a blog and a portfolio of work.`,
-  siteUrl: `https://rangarajan.dev`,
-  themeColor: `#000`,
-  backgroundColor: `#fff`,
+  siteTitle: 'Dev Rangarajan',
+  siteTitleShort: 'DR',
+  siteDescription:
+    "This is Dev Rangarajan's Personal website, hosting a blog and a portfolio of work.",
+  siteUrl: 'https://rangarajan.dev',
+  themeColor: '#000',
+  backgroundColor: '#fff',
   pathPrefix: null,
-  logo: path.resolve(__dirname, 'src/images/icon.png'),
+  logo: 'content/favicon/favicon.ico',
+  author: {
+    name: 'Dev Rangarajan',
+    summary: 'Just a dude.',
+  },
   social: {
-    twitter: `gatsbyjs`,
-    fbAppId: `966242223397117`,
+    twitter: 'gatsbyjs',
+    fbAppId: '966242223397117',
   },
 };

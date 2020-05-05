@@ -3,6 +3,13 @@
   "content": "portfolio.md",
   "projects" : [
     {
+      "title" : "Photospheres",
+      "description" : "A collaboration with Fred Choi, photospheres is a 2D interface for searching a set of photos without text. I implemented two different clustering algorithms (Image Hash based and VGG16 Neural Network based).",
+      "path" : "http://cp.fred-choi.com/index.html",
+      "isExternal" : "external",
+      "image" : "photospheres.png"
+    },
+    {
       "title" : "Project Agrarian",
       "description" : "A regenerative design approach to telling compelling restaurant stories.",
       "path" : "agrarian",
@@ -10,8 +17,8 @@
     },
     {
       "title" : "C.S.S.A.W.",
-      "description" : "Citizen Science for South African Waters, a project to improve water quantity monitoring in the Limpopo Basin.",
-      "path" : "https://rcos.io/projects/johncs00/c-ssaw/profile",
+      "description" : "Citizen Science for South African Waters, a project to improve water quantity monitoring in the Limpopo Basin. I spent 1 year on this project, taking it from inception to managing a team of 8 undergrads as we work to deploy our solution in South Africa.",
+      "path" : "https://github.com/DevTheDev/C-SSAW",
       "isExternal" : "external",
       "image" : "southafrica.jpg"
     },

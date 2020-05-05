@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
@@ -66,6 +67,13 @@ const ArtDirectedFullBackground = ({
       </BackgroundImage>
     </StyledFullScreenWrapper>
   );
+};
+
+ArtDirectedFullBackground.propTypes = {
+  className: PropTypes.object,
+  children: PropTypes.object.isRequired,
+  desktopImagePath: PropTypes.object.isRequired,
+  mobileImagePath: PropTypes.object.isRequired,
 };
 
 const StyledFullBackground = styled(ArtDirectedFullBackground)`

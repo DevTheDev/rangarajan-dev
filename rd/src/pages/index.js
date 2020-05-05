@@ -4,10 +4,15 @@ import Layout from 'components/layout';
 import Box from 'components/box';
 import Title from 'components/title';
 import Gallery from 'components/gallery';
+import Helmet from 'react-helmet';
+import favicon from '../../content/favicon/favicon.ico';
 import { graphql } from 'gatsby';
 
 const Index = ({ data }) => (
   <Layout>
+    <Helmet>
+      <link rel="icon" href={favicon} />
+    </Helmet>
     <Box>
       <Title as="h2" size="large">
         Hi, I&#39;m Dev.
@@ -15,7 +20,6 @@ const Index = ({ data }) => (
     </Box>
     <Box>{data.homeJson.content.childMarkdownRemark.rawMarkdownBody}</Box>
     <Gallery items={data.homeJson.gallery} />
-    <div style={{ height: '50vh' }} />
   </Layout>
 );
 
@@ -31,7 +35,6 @@ export const query = graphql`
       title
       content {
         childMarkdownRemark {
-          html
           rawMarkdownBody
         }
       }

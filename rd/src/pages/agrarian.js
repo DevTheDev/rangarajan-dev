@@ -44,7 +44,6 @@ export const query = graphql`
       title
       content {
         childMarkdownRemark {
-          html
           rawMarkdownBody
         }
       }

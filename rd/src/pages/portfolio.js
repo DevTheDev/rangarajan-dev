@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from 'components/layout';
 import Box from 'components/box';
-import Title from 'components/title';
 import Masonry from 'react-masonry-component';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
@@ -68,7 +67,6 @@ export const query = graphql`
       title
       content {
         childMarkdownRemark {
-          html
           rawMarkdownBody
         }
       }

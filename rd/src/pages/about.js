@@ -4,16 +4,18 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
+// import DynamicTimeline from 'timeline.js';
 
 const About = ({ data }) => (
   <Layout>
     <Head pageTitle={data.aboutJson.title} />
     <Box>
+      {/* <DynamicTimeline />
       <div
         dangerouslySetInnerHTML={{
           __html: data.aboutJson.content.childMarkdownRemark.html,
         }}
-      />
+      /> */}
     </Box>
   </Layout>
 );
@@ -30,7 +32,7 @@ export const query = graphql`
       title
       content {
         childMarkdownRemark {
-          html
+          rawMarkdownBody
         }
       }
     }

@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
-// import DynamicTimeline from 'timeline.js';
+//TODO Add three js interactive element to this
 
 const About = ({ data }) => (
   <Layout>

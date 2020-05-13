@@ -4,7 +4,7 @@ module.exports = {
   siteTitle: 'Dev Rangarajan',
   siteTitleShort: 'DR',
   siteDescription:
-    "This is Dev Rangarajan's Personal website, hosting a blog and a portfolio of work.",
+    "This is Dev Rangarajan's blog and portfolio of work.",
   siteUrl: 'https://rangarajan.dev',
   themeColor: '#000',
   backgroundColor: '#fff',
@@ -12,10 +12,9 @@ module.exports = {
   logo: 'content/favicon/favicon.ico',
   author: {
     name: 'Dev Rangarajan',
-    summary: 'Just a dude.',
+    summary: 'Healthcare Futurist, Regenerative Designer, King of Colors',
   },
   social: {
-    twitter: 'gatsbyjs',
-    fbAppId: '966242223397117',
+    twitter: 'devrangarajan',
   },
 };

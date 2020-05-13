@@ -11,6 +11,7 @@ const Layout = ({ data, children }) => (
     <Head />
     <Header title={data.site.siteMetadata.siteTitle} />
     {children}
+    <div css={{ display: 'none' }}> Some images from icons8.com </div>
   </div>
 );
 

@@ -77,7 +77,7 @@ export const query = graphql`
         isExternal
         image {
           childImageSharp {
-            fluid(maxHeight: 500, quality: 90) {
+            fluid(maxHeight: 400, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }

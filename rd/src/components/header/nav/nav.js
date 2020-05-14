@@ -50,7 +50,7 @@ const Nav = () => {
   return (
     <Container>
       <ul>
-        <li>
+        {/* <li> 
           <Link to="/about">
             {yoMobile ? (
               <Image fixed={logos.navJson.aboutIMG.childImageSharp.fixed} />
@@ -58,7 +58,7 @@ const Nav = () => {
               'About'
             )}
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/blog">
             {yoMobile ? (

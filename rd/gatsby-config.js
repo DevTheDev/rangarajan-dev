@@ -9,7 +9,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-offline',
-    'gatsby-plugin-glamor',
     'gatsby-transformer-json',
     {
       resolve: 'gatsby-transformer-remark',
@@ -31,7 +30,7 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
-      }
+      },
     },
     'gatsby-plugin-eslint',
     {

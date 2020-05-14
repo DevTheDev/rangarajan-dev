@@ -5,13 +5,17 @@ import Head from 'components/head';
 import Header from 'components/header';
 import GlobalStyle from 'global.css.js';
 
+const footerStyle = {
+  display: 'none',
+};
+
 const Layout = ({ data, children }) => (
   <div>
     <GlobalStyle />
     <Head />
     <Header title={data.site.siteMetadata.siteTitle} />
     {children}
-    <div css={{ display: 'none' }}> Some images from icons8.com </div>
+    <div style={footerStyle}> Some images from icons8.com </div>
   </div>
 );
 

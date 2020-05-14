@@ -5,18 +5,25 @@ import { Link, graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import SEO from 'components/blog/seo';
+import styled from 'styled-components';
+
+const blogText = styled.div`
+  text-align: left,
+  font-family: Times-New-Roman
+`;
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout>
-      <Box>
-        Inspired by Seth Godin, these are some riffs about different things in
-        my life.
+      <Box text-align="left">
+        Inspired by Seth Godin, here are some of my riffs and quick thoughts
+        about various topics. I&apos;d love to chat more about any of these,
+        feel free to reach out.
       </Box>
       <SEO title="All posts" />
-      <Box>
+      <Box src={blogText}>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (

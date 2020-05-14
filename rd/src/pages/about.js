@@ -4,19 +4,13 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
+import Scene from 'components/scene';
 //TODO Add three js interactive element to this
 
 const About = ({ data }) => (
   <Layout>
     <Head pageTitle={data.aboutJson.title} />
-    <Box>
-      {/* <DynamicTimeline />
-      <div
-        dangerouslySetInnerHTML={{
-          __html: data.aboutJson.content.childMarkdownRemark.html,
-        }}
-      /> */}
-    </Box>
+    <Scene />
   </Layout>
 );
 

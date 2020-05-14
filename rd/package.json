@@ -60,7 +60,8 @@
     "react-pose": "^4.0.5",
     "rollup": "^2.9.1",
     "sharp": "^0.25.2",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "three": "^0.116.1"
   },
   "devDependencies": {
     "ava": "^3.8.2",

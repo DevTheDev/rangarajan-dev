@@ -1,14 +1,15 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
-import Bio from 'components/blog/bio';
+// import Bio from 'components/blog/bio';
 import Layout from 'components/layout';
 import SEO from 'components/blog/seo';
 import TextBox from 'components/textbox';
 import Title from 'components/title';
 import Box from 'components/box';
 
-const BlogPostTemplate = ({ data, pageContext }) => {
+const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
 
   return (
@@ -37,6 +38,10 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       </article>
     </Layout>
   );
+};
+
+BlogPostTemplate.propTypes = {
+  data: PropTypes.object.isrequired,
 };
 
 export default BlogPostTemplate;

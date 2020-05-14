@@ -10,12 +10,6 @@
       "image" : "photospheres.png"
     },
     {
-      "title" : "Project Agrarian",
-      "description" : "A regenerative design approach to telling compelling restaurant stories.",
-      "path" : "agrarian",
-      "image" : "../images/farm.jpg"
-    },
-    {
       "title" : "C.S.S.A.W.",
       "description" : "Citizen Science for South African Waters, a project to improve water quantity monitoring in the Limpopo Basin. I spent 1 year on this project, taking it from inception to managing a team of 8 undergrads as we work to deploy our solution in South Africa.",
       "path" : "https://github.com/DevTheDev/C-SSAW",

@@ -3,8 +3,7 @@ const path = require('path');
 module.exports = {
   siteTitle: 'Dev Rangarajan',
   siteTitleShort: 'DR',
-  siteDescription:
-    "This is Dev Rangarajan's blog and portfolio of work.",
+  siteDescription: "This is Dev Rangarajan's blog and portfolio of work.",
   siteUrl: 'https://rangarajan.dev',
   themeColor: '#000',
   backgroundColor: '#fff',

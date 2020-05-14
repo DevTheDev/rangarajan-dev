@@ -51,7 +51,7 @@ const Nav = () => {
     <Container>
       <ul>
         <li>
-        <Link to="/about">
+          <Link to="/about">
             {yoMobile ? (
               <Image fixed={logos.navJson.aboutIMG.childImageSharp.fixed} />
             ) : (

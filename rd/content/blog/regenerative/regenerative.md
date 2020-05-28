@@ -2,7 +2,7 @@
 title: Regenerative Companies
 description: Maximizing shareholder wealth isn't going to work forever.
 date: '2020-05-21'
-published: false
+published: true
 ---
 In agriculture, there is the idea of permaculture. What this means is planting things that return nitrogen to the soil, improve the overall yield of the farm, and create self-sustaining ecosystems that return value to the world. Topsoil depletion is a big problem for our food production, largely because we only planted one annual crop over and over again and then harvested it and sent it away to be eaten. As a result, our food is less nutritious than it used to be, and we have to do more genetic modification and use more artificial means to produce the same yield. Fortunately, smart people are working on this problem, and developing solutions for producing our food supply in a more permanent way. 
 

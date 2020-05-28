@@ -2,7 +2,7 @@
 title: An open letter to RPI
 description: When did the bar hit the floor?
 date: '2020-05-17'
-published: false
+published: true
 ---
 Dear President Jackson, RPI Administration, and the Board of Trustees,
 
@@ -15,7 +15,7 @@ The fact that you are raising student expenses and delivering a worse experience
 
 Your students will be fine, in the long term they'll figure it out, they're young, and there are tons of opportunities for innovation and this world-changing that you love to preach. What about you? If you continue on this current course of acting like a private equity raider, and squeezing every bit of efficiency out of a school you'll be left holding nothing. This isn't sustainable, certainly you can see the projections. What's the plan? Steven Van Rensselaer didn't found this school for you to turn it into a poorly working business.
 
-So what's next? It's time to do something radical, and take asymmetric risks that have the chance of making the Rensselaer name the pre-eminent tech school for the new world. That's what we all want, I promise you can keep your bloated compensation if you do that, because people will be lining up to pay. This coming year is the chance for you to take some risks, and maybe change the world (why not?)
+So what's next? It's time to do something radical, and take asymmetric risks that have the chance of making the Rensselaer name the preeminent tech school for the new world. That's what we all want, I promise you can keep your bloated compensation if you do that, because people will be lining up to pay. This coming year is the chance for you to take some risks, and maybe change the world (why not?)
 
 Online education hasn't really been figured out by anyone yet. MIT has had open courses for years now, and people still go to college for those same courses. So clearly the information level is not what matters for university success. What does that mean? It means you need to de-prioritize lengthy lectures and regurgitation tests in favor of learning real skills and making life-long connections. I'm not an expert by any means in education, but I can tell you that your current model isn't accomplishing those goals. 
 

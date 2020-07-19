@@ -18,7 +18,14 @@ const Index = ({ data }) => (
         Hi, I&#39;m Dev.
       </Title>
     </Box>
-    <Box>{data.homeJson.content.childMarkdownRemark.rawMarkdownBody}</Box>
+    <Box>
+      <Title>
+        Here&#39;s a little about me and what I&#39;m working on. Feel free to
+        check out&nbsp;
+        <a href="https://www.agrarian.design">agrarian.design</a>
+        &nbsp;my current focus.
+      </Title>
+    </Box>
     <Gallery items={data.homeJson.gallery} />
   </Layout>
 );

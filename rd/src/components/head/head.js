@@ -161,6 +161,8 @@ const Head = ({
         })
       )}
     </script>
+
+    <script src="lib/lax.min.js"></script>
   </Helmet>
 );
 

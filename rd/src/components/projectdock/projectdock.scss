@@ -1,0 +1,46 @@
+$border-hot:  #594F3B;
+
+.blocks {
+    margin: 40px auto 0 !important;
+
+}
+
+.container {
+    background: white;
+    font-family: gelo light;
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.block-border {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    border: 1px solid $border-hot;
+    pointer-events: none;
+    position: absolute;
+    background: none;
+    height: 180px;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    top: 0
+}
+
+@media (max-width: 600px) {
+    .hide-mobile {
+        display:none !important
+    }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

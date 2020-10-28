@@ -1,0 +1,34 @@
+{
+  "projects":[
+    {
+      "title": "Agrarian Design",
+      "subtitle": "The First Regenerative Digital Marketing Agency",
+      "image": "../images/goldengate.jpg",
+      "link": "https://agrarian.design"
+    },
+    {
+      "title": "Machiavelli Materials",
+      "subtitle": "A regenerative luxury clothing brand.",
+      "image": "../favicon/apple-icon.png",
+      "link": "https://mm.rangarajan.dev"
+    },
+    {
+      "title": "Font Finder",
+      "subtitle": "Search for a font the right way: graphically.",
+      "image": "../images/goldengate.jpg",
+      "link": "https://ff.rangarajan.dev"
+    },
+    {
+      "title": "Regenerative Farmers Almanack",
+      "subtitle": "A comprehensive guide to managing regenerative ecosystems.",
+      "image": "../images/goldengate.jpg",
+      "link": "https://almanack.agrarian.design"
+    },
+    {
+      "title": "King of Colors",
+      "subtitle": "21st Century Medici House",
+      "image": "../images/goldengate.jpg",
+      "link": "https://koc.rangarajan.dev"
+    }
+  ]
+}

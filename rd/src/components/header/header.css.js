@@ -3,6 +3,7 @@ import { toolbar } from 'constants/theme';
 import { emphasis } from 'constants/theme';
 
 export const Container = styled.header`
+  @import url('https://use.typekit.net/fdq0hwg.css');
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,4 +18,11 @@ export const Container = styled.header`
       color: ${emphasis};
     }
   }
+`;
+
+export const Signature = styled.header`
+  text-decoration: none;
+  font-family: 'shabby-chic', sans-serif;
+  font-style: normal;
+  font-weight: 800;
 `;

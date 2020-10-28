@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import posed from 'react-pose';
-import { Container } from './header.css';
+import { Container, Signature } from './header.css';
+import { isMobile } from 'react-device-detect';
 import Nav from 'components/header/nav';
 
-// Example of a component-specific page transition
 const AnimatedContainer = posed.div({
   enter: {
     y: 0,
@@ -24,7 +24,9 @@ const AnimatedContainer = posed.div({
 const Header = () => (
   <AnimatedContainer>
     <Container>
-      <Link to="/">DR</Link>
+      <Signature>
+        <Link to="/">{isMobile ? 'DR' : 'Dev Rangarajan'}</Link>{' '}
+      </Signature>
       <Nav />
     </Container>
   </AnimatedContainer>

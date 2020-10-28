@@ -1,5 +1,7 @@
 const siteConfig = require('./site-config');
 
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     ...siteConfig,
@@ -56,6 +58,14 @@ module.exports = {
       options: {
         rule: {
           include: /images\/.*\.svg$/,
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
         },
       },
     },

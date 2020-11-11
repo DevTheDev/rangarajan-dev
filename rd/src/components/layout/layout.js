@@ -10,13 +10,13 @@ const footerStyle = {
 };
 
 const Layout = ({ data, children }) => (
-  <div>
+  <>
     <GlobalStyle />
     <Head />
     <Header title={data.site.siteMetadata.siteTitle} />
     {children}
     <div style={footerStyle}> Some images from icons8.com </div>
-  </div>
+  </>
 );
 
 Layout.propTypes = {

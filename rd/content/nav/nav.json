@@ -1,7 +1,6 @@
 {
-    "aboutIMG": "about.png",
-    "blogIMG": "blog.png",
-    "portfolioIMG": "portfolio.png",
-    "linkedinIMG": "linkedin.png",
-    "githubIMG": "github.png"
+    "blogIMG": "blog.svg",
+    "linkedinIMG": "icon-linkedin.svg",
+    "githubIMG": "icon-github.svg",
+    "twitterIMG" : "icon-twitter.svg"
 }

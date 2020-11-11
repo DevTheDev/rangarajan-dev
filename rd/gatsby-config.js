@@ -69,5 +69,31 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Dev Rangarajan',
+        short_name: 'DR',
+        start_url: '/',
+        lang: 'en',
+        background_color: '#FFF',
+        theme_color: '#97C4F7',
+        display: 'standalone',
+        icon: `${__dirname}/content/images/DR.svg`, // This path is relative to the root of the site.
+        theme_color_in_head: false,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mixpanel',
+      options: {
+        apiToken: 'd2ff0f572578288a35552dd0e28c8e31', // required
+        enableDevMode: true,
+        mixpanelConfig: null, // override specific config for mixpanel initialization https://github.com/mixpanel/mixpanel-js/blob/8b2e1f7b/src/mixpanel-core.js#L87-L110
+        pageViews: 'all', // see below
+        // set pageViews to 'all' and use this option to set the same event name for all page view events
+        trackPageViewsAs: 'Page View', // optionally: set an Event Name to use for all page views, eg: trackPageViewsAs: 'Page view'
+        getPageViewTransformerFn: 'return () => ({url: location})', // optionally: function body as a string to customize the event sent to mixpanel. Receives one parameter: location. Example 'return () => ({url: location.pathname})
+      },
+    },
   ],
 };

@@ -1,47 +1,24 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { Container } from './nav.css';
-import Image from 'gatsby-image';
+// import Image from 'gatsby-image';
 import { isMobile } from 'react-device-detect';
 
 const Nav = () => {
   const logos = useStaticQuery(graphql`
     query navQuery {
       navJson {
-        aboutIMG {
-          childImageSharp {
-            fixed(height: 30, width: 30) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
         blogIMG {
-          childImageSharp {
-            fixed(height: 30, width: 30) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        portfolioIMG {
-          childImageSharp {
-            fixed(height: 30, width: 30) {
-              ...GatsbyImageSharpFixed
-            }
-          }
+          publicURL
         }
         linkedinIMG {
-          childImageSharp {
-            fixed(height: 30, width: 30) {
-              ...GatsbyImageSharpFixed
-            }
-          }
+          publicURL
         }
         githubIMG {
-          childImageSharp {
-            fixed(height: 30, width: 30) {
-              ...GatsbyImageSharpFixed
-            }
-          }
+          publicURL
+        }
+        twitterIMG {
+          publicURL
         }
       }
     }
@@ -53,7 +30,7 @@ const Nav = () => {
         <li>
           <Link to="/blog">
             {yoMobile ? (
-              <Image fixed={logos.navJson.blogIMG.childImageSharp.fixed} />
+              <img src={logos.navJson.blogIMG.publicURL} alt={'blog'} />
             ) : (
               'Blog'
             )}
@@ -66,9 +43,22 @@ const Nav = () => {
             target="_blank"
           >
             {yoMobile ? (
-              <Image fixed={logos.navJson.linkedinIMG.childImageSharp.fixed} />
+              <img src={logos.navJson.linkedinIMG.publicURL} alt={'linkedin'} />
             ) : (
               'LinkedIn'
+            )}
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/devrangarajan"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {yoMobile ? (
+              <img src={logos.navJson.twitterIMG.publicURL} alt={'twitter'} />
+            ) : (
+              'Twitter'
             )}
           </a>
         </li>
@@ -79,7 +69,7 @@ const Nav = () => {
             target="_blank"
           >
             {yoMobile ? (
-              <Image fixed={logos.navJson.githubIMG.childImageSharp.fixed} />
+              <img src={logos.navJson.githubIMG.publicURL} alt={'github'} />
             ) : (
               'Github'
             )}

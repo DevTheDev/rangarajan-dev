@@ -168,6 +168,9 @@ $icon: #594F3B;
     pointer-events: none;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    color: $icon;
+    height: 40px;
+    width: 40px;
 }
 
 @media (max-width: 600px) {
@@ -200,14 +203,15 @@ $icon: #594F3B;
     }
 
     .block-text {
-        margin-top: 80px;
+        margin-top: 40px;
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2
     }
 
     .block-img {
-        width: 24px
+        width: 60px;
+        align-items: center;
     }
 
     .block-icon {

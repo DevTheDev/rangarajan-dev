@@ -28,7 +28,7 @@ const BlogIndex = ({ data }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
             <article src={blogText} key={node.fields.slug}>
-              <header>
+              <div>
                 <h3
                   style={{
                     marginBottom: 1 / 4,
@@ -39,7 +39,7 @@ const BlogIndex = ({ data }) => {
                   </Link>
                 </h3>
                 <small>{node.frontmatter.date}</small>
-              </header>
+              </div>
               <section>
                 <p
                   dangerouslySetInnerHTML={{

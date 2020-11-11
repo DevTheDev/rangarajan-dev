@@ -1,0 +1,29 @@
+
+
+.hero-main {
+    padding-left: 12%;
+    padding-bottom: 400px;
+    padding-top: 100px;
+    color: #594F3B;
+    width: 100%;
+    display: inline-block;
+    font-family: gelo, serif;
+    font-weight: 300;
+    font-size: 7rem;
+    line-height: 1;
+    @media (max-width: 600px) {
+        padding-left: 5%;
+        font-size: 3rem;
+    }
+}
+
+
+.label {
+    display: table-cell;
+}
+
+.typed {
+    display: table-cell;
+    white-space: nowrap;
+    padding: 0;
+}

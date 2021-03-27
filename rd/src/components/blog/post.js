@@ -6,8 +6,9 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import SEO from 'components/blog/seo';
 import TextBox from 'components/textbox';
-import Title from 'components/title';
 import Box from 'components/box';
+
+import './blog.scss';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
@@ -18,24 +19,17 @@ const BlogPostTemplate = ({ data }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
-        <Box>
-          <Title as="h3" size="large">
-            {post.frontmatter.title}
-          </Title>
-          <p
-            style={{
-              display: 'block',
-              marginBottom: 10,
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
-        </Box>
-        <TextBox>
+      <div className="blog">
+        <div className="header">
+          <div className="title">{post.frontmatter.title}</div>
+          <div className="subtitle">{post.frontmatter.description}</div>
+          <div className="date">{post.frontmatter.date}</div>
+        </div>
+        <div className="content">
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        </TextBox>
-      </article>
+        </div>
+      </div>
+      <div className="foot">© {new Date().getFullYear()}, Dev Rangarajan</div>
     </Layout>
   );
 };

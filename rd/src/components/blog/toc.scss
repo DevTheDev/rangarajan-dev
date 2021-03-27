@@ -1,0 +1,35 @@
+.toc {
+    // bg-white fixed hidden lg:flex flex-col rounded p-3 my-3
+  width: 20em;
+  position: sticky;
+  top: 11.089em;
+//   align-self: start;
+    font-size: 16pt;
+}
+
+.innerscroll{
+    scrollbar-width: thin;
+    scrollbar-color: #367ee9 rgba(48, 113, 209, 0.3);
+    overflow: hidden auto;
+}
+
+.toc-link {
+    // const ToCLink = tw.a`hover:text-black transition duration-300 no-underline`;
+    text-decoration: none;
+    display: block;
+    padding: .125rem 0;
+    color: #ccc;
+    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.toc-link:hover, .toc-link:focus{
+    color: #666;
+}
+
+.toc-element {
+    // p-1 leading-5 ml-4 mb-4 mr-4 leading-3 list-none
+}
+
+html {
+    scroll-behavior: smooth;
+}

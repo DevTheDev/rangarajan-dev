@@ -59,4 +59,8 @@ I tried to clean up the css to really deliver a great experience (switched some 
 
 > Picked a font I was reasonably happy with - I'll probably change all of this again when I build font-finder. I'll write what I learned in short tips there, and use that as a small growth tactic for the app.
 
+# Heres why you should do this
+
+Having good design isn't just a question of style, but of substance.
+
 [^1] Footnote testing.

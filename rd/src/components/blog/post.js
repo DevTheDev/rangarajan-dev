@@ -5,8 +5,7 @@ import { graphql } from 'gatsby';
 // import Bio from 'components/blog/bio';
 import Layout from 'components/layout';
 import SEO from 'components/blog/seo';
-import TextBox from 'components/textbox';
-import Box from 'components/box';
+import ToC from './toc';
 
 import './blog.scss';
 
@@ -19,6 +18,8 @@ const BlogPostTemplate = ({ data }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
+      <ToC headings={post.headings}></ToC>
+
       <div className="blog">
         <div className="header">
           <div className="title">{post.frontmatter.title}</div>
@@ -55,6 +56,10 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         published
+      }
+      headings {
+        depth
+        value
       }
     }
   }

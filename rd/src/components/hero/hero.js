@@ -2,11 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Typing from 'react-typing-animation';
 
-// Remove these via custom divs
-import Box from 'components/box';
-import Title from 'components/title';
-
 import './hero.scss';
+import face from '../../../content/home/face-true.png';
 
 const Hero = ({ items }) => (
   <div className="hero-main">
@@ -28,6 +25,7 @@ const Hero = ({ items }) => (
         Dev.
       </Typing>
     </div>
+    <img src={face} alt="" draggable="false"></img>
   </div>
 );
 

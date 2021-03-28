@@ -1,19 +1,50 @@
-
-
+//TODO golden ratio and standardization across this page too, pretty hacky right now.
+//TODO global standardize breakpoints
 .hero-main {
-    padding-left: 12%;
-    padding-bottom: 400px;
     padding-top: 100px;
     color: #594F3B;
     width: 100%;
     display: inline-block;
     font-family: gelo, serif;
     font-weight: 300;
-    font-size: 7rem;
     line-height: 1;
-    @media (max-width: 600px) {
-        padding-left: 5%;
-        font-size: 3rem;
+    //Phone
+    padding-left: 0.618em;
+    font-size: 24px;
+    @media (min-width: 600px) { //Tablet
+        padding-left: 1.618em;
+        font-size: 32px;
+    }
+    @media (min-width: 1200px){ //Desktop
+        font-size: 7rem;
+        padding-left: 12%; //TODO fix to golden ratio
+    }
+
+    img {
+        float: right;
+        display: inline-block;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+
+        //Phone
+        margin-top: 0em;
+        margin-right: 1em;
+        width: 6.854em;
+        //Min for tablet
+        @media (min-width: 600px){ //Tablet (between 600px and 1000px)
+            width: 11.089em;
+            margin-right: 1.618em;
+            margin-top: -2em;
+        }
+        //Min for desktop
+        @media (min-width: 1200px){
+            width: 11.089em;
+            margin-right: 2em;
+            margin-top: -2.618em;
+        }
     }
 }
 
@@ -27,3 +58,4 @@
     white-space: nowrap;
     padding: 0;
 }
+

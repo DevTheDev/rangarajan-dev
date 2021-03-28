@@ -3,18 +3,18 @@
 .blog {
     font-size: 16px;
     line-height: 1.3;
-    width: 29.03em;
     padding-bottom: 13.707em;
     margin: auto;
-
+    width: 22.178em;
 
     @media (min-width: 800px) { //Tablet
         font-size: 20px;
+        width: 29.03em;
     }
     
     @media (min-width: 1200px) { //Desktop
         font-size: 24px;
-        line-height: 1.5;
+        line-height: 1.6;
     }
 }
 
@@ -29,6 +29,7 @@
 .subtitle {
     font-size: 1.236em;
     font-style: italic;
+    color: #97C4F7;
 }
 
 .date {
@@ -92,5 +93,16 @@
 
     code {
         margin: 2em 0;
+    }
+
+    .footnote-ref{
+        color: #6699ff;
+        font-size: 0.618em;
+        font-family: "space", sans-serif;
+        font-weight: 600;
+        vertical-align: super;
+        text-decoration: none;
+        background-color: #97C4F7;
+        padding: 0.168em;
     }
 }

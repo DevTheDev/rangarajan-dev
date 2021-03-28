@@ -2,37 +2,68 @@
     // bg-white fixed hidden lg:flex flex-col rounded p-3 my-3
     display: none; //Invisible not on desktop
     @media (min-width: 1200px) {
-        display: inline-block; //TODO tinker with
+        display: block; //TODO tinker with
         width: 20em;
-        position: sticky;
-        top: 11.089em;
+        position: fixed;
+        top: 13.707em;
     //   align-self: start;
         font-size: 16pt;
+        border-radius: 0 2px 2px 0;
+        transition: background-color 350ms;
+        padding-top: 10px;
+        padding-right: 21px;
+        padding-bottom: 12px;
+        letter-spacing: 0.425px;
     }
 }
 
-.innerscroll{
-    scrollbar-width: thin;
-    scrollbar-color: #367ee9 rgba(48, 113, 209, 0.3);
-    overflow: hidden auto;
-}
-
-.toc-link {
-    // const ToCLink = tw.a`hover:text-black transition duration-300 no-underline`;
-    text-decoration: none;
-    display: block;
-    padding: .125rem 0;
-    color: #ccc;
-    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
-}
-
-.toc-link:hover, .toc-link:focus{
-    color: #666;
+.toc:hover, .toc:focus{
+    background-color: #efefef;
+    .toc-link {
+        visibility: visible;
+    }
 }
 
 .toc-element {
-    // p-1 leading-5 ml-4 mb-4 mr-4 leading-3 list-none
+    display: block;
 }
+
+.toc-link {
+    display: block;
+    padding: .125rem 0;
+    text-decoration: none;
+    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+    visibility: hidden;    
+    color: #ccc;
+}
+
+.toc-link:hover, .toc-link:focus{
+    display: block;
+    color: #666;
+}
+
+.toc-link.w-current {
+    text-decoration: underline;
+}
+
+.toc-line {
+    display: inline-block;
+    width: 25px;
+    height: 19px;
+    margin-top: -4px;
+    margin-right: 11px;
+    float: left;
+    border-bottom: 2px solid #d9e2e6;
+    opacity: .9;
+    color: #ebecee;
+    font-size: 11px;
+    line-height: 2.48em;
+    font-weight: 600;
+    letter-spacing: 0;
+    border-color: #6699ff;
+}
+
+
 
 html {
     scroll-behavior: smooth;

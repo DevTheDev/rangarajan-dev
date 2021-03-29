@@ -5,7 +5,8 @@ date: '2021-03-26'
 published: true
 ---
 
-# Most Top Performers don't even attempt to design their personal sites
+# No one does this
+Most Top Performers don't even attempt to design their personal sites.
 
 Patrick Collison of stripe has one of the best personal sites on the internet, and there's probably no css.
 
@@ -50,11 +51,6 @@ Then I sat down with the blog, tabbing through all of these sites while tinkerin
 
 I read a bunch of stuff about `rem vs em`, line heights, modular scales, etc.
 
-```python
-s = "Python syntax highlighting"
-print s
-```
-
 I tried to clean up the css to really deliver a great experience (switched some stuff over to sass). [^1]
 
 > Picked a font I was reasonably happy with - I'll probably change all of this again when I build font-finder. I'll write what I learned in short tips there, and use that as a small growth tactic for the app.
@@ -94,10 +90,3 @@ I wanted a link in bio tool for instagram/clubhouse, so I made one at rangarajan
 Some other stuff was originated by this tweet of mine - thinking of your website like an api
 
 Help page: 
-
-
-[^1]: Footnote testing
-
-[^bignote]: This is a big footnote
-    it's really fukcing big
-    here's how it looks

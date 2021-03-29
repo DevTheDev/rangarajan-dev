@@ -1,42 +1,58 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import IO from 'components/io';
+
+import Scrollspy from 'react-scrollspy';
 
 import './toc.scss';
 
-const ToC = ({ headings }) => (
-  <div className="toc">
-    <div className="innerscroll">
-      {headings.map((heading) => {
-        if (heading.depth > 2) {
-          //Only # or ## sections are worth it
-          return <div />;
-        }
+//TODO: There's a slight bug where you can fall off of the toc between sections. not sure how to fix (prob a scrollspy setting)
+//TODO: Interaction when you click on the link flashes the background (it shouldn't)
+//TODO: If you have only 1 section cut it off, or if you have a bunch (I'll just remember this on my own for now)
+export default function ToC({ headings }) {
+  var values = [];
 
-        return (
-          <div className="toc-element" key={heading.value}>
-            <span className="toc-line"></span>
-            <a
-              className="toc-link"
-              href={`#${heading.value
-                .replace(/\s+/g, '-')
-                .replace(/[^a-zA-Z0-9-_]/g, '') //Filter so the url is always valid.
-                .toLowerCase()}`}
-            >
-              {heading.value}
-            </a>
-          </div>
-        );
-      })}
+  for (var key in headings) {
+    values.push(
+      headings[key].value
+        .replace(/\s+/g, '-')
+        .replace(/[^a-zA-Z0-9-_]/g, '')
+        .toLowerCase()
+    );
+  }
+
+  return (
+    <div className="toc" items={values}>
+      <div className="innerscroll">
+        <Scrollspy items={values} currentClassName="is-current" offset={0}>
+          {headings.map((heading) => {
+            if (heading.depth > 2) {
+              //Only # or ## sections are worth it
+              return <></>;
+            }
+            return (
+              <li key={heading.value} className="toc-element">
+                <span className="toc-line"></span>
+                <a
+                  className="toc-link"
+                  href={`#${heading.value
+                    .replace(/\s+/g, '-')
+                    .replace(/[^a-zA-Z0-9-_]/g, '') //Filter so the url is always valid.
+                    .toLowerCase()}`}
+                >
+                  {heading.value}
+                </a>
+              </li>
+            );
+          })}
+        </Scrollspy>
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 ToC.propTypes = {
   headings: PropTypes.object.isrequired,
 };
-
-export default ToC;
 
 /** In order to make this work I need to have something like Julian does. 
 so each blog post should have a list of sections, but then each section should have a name.
@@ -48,12 +64,5 @@ So it'd be like
 - End -> fresh prince
 
 And then I'll display that start, middle, end on both the sidebar as progress, and on the bottom of handbooks.
-*/
 
-/**
- * Step 1: know which section you're in
- * Always accent the tick mark for that section. Other tick marks greyed out
- * If you mouse over the toc, show the text and background box
- * If you mouse over a link in the toc, change the color (done)
- * for the link of the current section, change color and underline
- */
+*/

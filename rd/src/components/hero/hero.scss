@@ -46,6 +46,28 @@
             margin-top: -2.618em;
         }
     }
+
+    .features {
+        margin-top: 10em;
+        font-size: 27px;
+        line-height: 1.4;
+        li {
+            list-style-type: disc;
+            padding-bottom: 0.618em;
+        }
+    }
+
+
+}
+
+.projects-arrow {
+    visibility: hidden;
+    display: none;
+    font-family: "space", sans-serif;
+    float: right;
+    font-size: 20px;
+    margin-top: 1em;
+    margin-right: 6em;
 }
 
 

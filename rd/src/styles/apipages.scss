@@ -1,0 +1,58 @@
+.apipage {
+    font-size: 16px;
+    font-family: gelo, sans-serif;
+    padding-bottom: 2.618em;
+    text-align: left;
+    color: #312b21;
+    margin: 0 2em;
+
+    @media (min-width: 800px) { //Tablet
+        font-size: 20px;
+        width: 29.03em;
+        margin: 0 25%;
+    }
+    
+    @media (min-width: 1200px) { //Desktop
+        font-size: 24px;
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-family: "space", sans-serif;
+        font-size: 2.618em;
+        text-align: left;
+        width: 100%;
+        overflow: visible;
+        line-height: 1.1;
+        color: #312b21;
+
+    }
+
+    h2 {
+        font-size: 1.236em;
+        font-style: italic;
+        color: #97C4F7;
+    }
+
+    h3 {
+        font-family: "space", sans-serif;
+        padding-top: 1em;
+        font-size: 1.618em;
+        color: #312b21;
+    }
+
+    p {
+        color: #594F3B;
+    }
+
+    h4 {
+        font-size: 0.618em;
+        font-style: italic;
+        float: right;
+    }
+
+    a {
+        text-decoration: underline;
+        color: inherit;
+    }
+}

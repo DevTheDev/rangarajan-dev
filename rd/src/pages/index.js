@@ -3,14 +3,9 @@ import PropTypes from 'prop-types';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Hero from 'components/hero';
-import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import ProjectDock from '../components/projectdock/projectdock';
-import { useMixpanel } from 'gatsby-plugin-mixpanel';
-
 function Index({ data }) {
-  const mixpanel = useMixpanel();
-  mixpanel.identify();
   return (
     <Layout>
       <Hero />

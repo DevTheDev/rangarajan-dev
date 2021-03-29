@@ -1,0 +1,51 @@
+
+
+.description {
+    font-size: 16px;
+    font-family: gelo, sans-serif;
+    padding-bottom: 2.618em;
+    text-align: left;
+    color: #312b21;
+    margin: 0 2em;
+
+    @media (min-width: 800px) { //Tablet
+        font-size: 20px;
+        width: 29.03em;
+        margin: 0 25%;
+    }
+    
+    @media (min-width: 1200px) { //Desktop
+        font-size: 24px;
+        line-height: 1.6;
+    }
+}
+
+.post {
+    margin-bottom: 1.618em;
+}
+
+.riffs {
+    font-size: 16px;
+    font-family: gelo, sans-serif;
+    margin: 0 2em;
+
+    a {
+        text-decoration: none;
+    }
+
+    .date {
+        float: right;
+        font-size: 0.618em;
+    }
+
+    .teaser {
+        font-style: italic;
+        color: #594F3B;
+        font-size: 0.764em;
+    }
+
+    @media (min-width: 800px){
+        font-size: 24px;
+        margin: 0 25%;
+    }
+}

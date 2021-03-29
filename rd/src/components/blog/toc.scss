@@ -1,25 +1,26 @@
 .toc {
-    // bg-white fixed hidden lg:flex flex-col rounded p-3 my-3
     display: none; //Invisible not on desktop
-    @media (min-width: 1200px) {
+    @media (min-width: 1200px) { //Julian uses 1300
         display: block; //TODO tinker with
-        width: 20em;
+        width: 17.942em;
         position: fixed;
         top: 13.707em;
     //   align-self: start;
         font-size: 16pt;
         border-radius: 0 2px 2px 0;
+        -webkit-transition: background-color 350ms;
         transition: background-color 350ms;
         padding-top: 10px;
-        padding-right: 21px;
+        padding-right: 0px;
         padding-bottom: 12px;
         letter-spacing: 0.425px;
     }
 }
 
-.toc:hover, .toc:focus{
+.toc:hover, .toc:focus, .toc:active{
     background-color: #efefef;
     .toc-link {
+        transition: visibility 350ms;
         visibility: visible;
     }
 }
@@ -32,23 +33,27 @@
     display: block;
     padding: .125rem 0;
     text-decoration: none;
-    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
     visibility: hidden;    
     color: #ccc;
 }
 
 .toc-link:hover, .toc-link:focus{
-    display: block;
     color: #666;
 }
 
-.toc-link.w-current {
-    text-decoration: underline;
+li.is-current {
+    .toc-link {
+        text-decoration: underline;
+        color: #6699ff;
+    }
+    .toc-line{
+        border-color: #6699ff;
+    }
 }
 
 .toc-line {
     display: inline-block;
-    width: 25px;
+    width: 2em;
     height: 19px;
     margin-top: -4px;
     margin-right: 11px;
@@ -60,7 +65,6 @@
     line-height: 2.48em;
     font-weight: 600;
     letter-spacing: 0;
-    border-color: #6699ff;
 }
 
 

@@ -3,54 +3,41 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 
 import Layout from 'components/layout';
-import Box from 'components/box';
 import SEO from 'components/blog/seo';
-import styled from 'styled-components';
 
-const blogText = styled.div`
-  text-align: left,
-  font-family: Times-New-Roman
-`;
+import '../styles/blog-main-page.scss';
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout>
-      <Box text-align="left">
-        Inspired by Seth Godin, here are some of my riffs and quick thoughts
-        about various topics. I&apos;d love to chat more about any of these,
+      <SEO title="Dev Rangarajan's blog posts and riffs." />
+      <div className="description">
+        A collection of random riffs and semi processed thoughts. Generally more
+        in depth than a tweet. Always happy to chat about any of these ideas -
         feel free to reach out.
-      </Box>
-      <SEO title="All posts" />
-      <Box src={blogText}>
+      </div>
+      <div className="riffs">
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
-            <article src={blogText} key={node.fields.slug}>
+            <article className="post" key={node.fields.slug}>
               <div>
-                <h3
-                  style={{
-                    marginBottom: 1 / 4,
-                  }}
-                >
-                  <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
+                <Link to={node.fields.slug}>{title}</Link>
+                <div className="date">{node.frontmatter.date}</div>
               </div>
-              <section>
+              <div className="teaser">
                 <p
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
                   }}
                 />
-              </section>
+              </div>
             </article>
           );
         })}
-      </Box>
+      </div>
     </Layout>
   );
 };

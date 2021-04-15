@@ -24,7 +24,6 @@ const BlogPostTemplate = ({ data }) => {
         <div className="header">
           <div className="title">{post.frontmatter.title}</div>
           <div className="subtitle">{post.frontmatter.description}</div>
-          <div className="date">{post.frontmatter.date}</div>
         </div>
         <div className="content">
           <section dangerouslySetInnerHTML={{ __html: post.html }} />

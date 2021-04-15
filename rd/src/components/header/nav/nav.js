@@ -28,11 +28,11 @@ const Nav = () => {
     <Container>
       <ul>
         <li>
-          <Link to="/blog">
+          <Link to="/riffs">
             {yoMobile ? (
-              <img src={logos.navJson.blogIMG.publicURL} alt={'blog'} />
+              <img src={logos.navJson.blogIMG.publicURL} alt={'riffs'} />
             ) : (
-              'Blog'
+              'Riffs'
             )}
           </Link>
         </li>

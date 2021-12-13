@@ -33,9 +33,11 @@ const Now = () => (
         growing ever since.
       </p>
       <p>
-        Now we mostly work with clean tech startups who&#39;ve raised an early
-        round and are trying to hit a growth target. We also work with
-        sustainable/regenerative e-commerce and cpg companies.
+        We work with climate tech companies who directly or indirectly improve
+        the planet. A typical client is a series A or B startup who is using
+        performance marketing to grow. We can handle everything from the ad down
+        to the purchase, and attribute the entire journey. We also work with
+        later stage companies on specific projects.
       </p>
       <p>
         It&#39;s been quite a journey becoming an entrepreneur. I&#39;ve been
@@ -50,14 +52,13 @@ const Now = () => (
         I&#39;m diving into a lot of stuff, and meandering through quite a few
         topics in my down time.
       </p>
-      <h3>Riding out covid & plotting the next move</h3>
+      <h3>Moving to Miami (for a while)</h3>
       <p>
-        At the start of the pandemic I flew back home to California, and
-        I&#39;ve been enjoying this time with family. You always see the graph
-        that shows by 18 you&#39;ve spent 80% of the time you&#39;ll ever have
-        with them, so this was a real silver lining.
+        I&#39;ll be in Brickell for at least 3 months starting in Jan 2022. If
+        you&#39;re based in Miami, please shoot me a DM on twitter, would love
+        to buy you coffee.
       </p>
-      <h4>Last Updated: March 2021</h4>
+      <h4>Last Updated: Dec 2021</h4>
     </div>
   </Layout>
 );

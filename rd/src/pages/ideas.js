@@ -11,11 +11,16 @@ const Ideas = () => (
         Eventually this will be a cool dynamic page sourced from my ideas
         database.
       </h2>
-      <h3>Zapier for doctors/medical</h3>
+      <h3>Solarpunk media company</h3>
+      <h3>
+        Ecommerce company where you make puzzles and then market via tiktoks
+        solving them
+      </h3>
+      <h3>Amex level consumer protection for crypto transactions</h3>
+      <h3>Zapier for doctors/medical staff</h3>
       <h3>Clustering for lead discovery</h3>
       <h3>Top golf for drag racing</h3>
-      <h3>A consultant that optimizes restaurant carry-out/pickup</h3>
-      <h3>A consultant that optimizes restaurant carry-out/pickup</h3>
+      <h3>A consultancy that optimizes restaurant carry-out/pickup</h3>
       <h3>Service to print blogs as books/magazines</h3>
       <h3>Book on interior design for peak performance</h3>
       <h3>Better knowledge engines</h3>

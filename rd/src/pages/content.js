@@ -15,9 +15,12 @@ const Content = () => (
         appearances)
       </p>
       <p>Oren Klaff - Pitch Anything</p>
+      <p>
+        Robert Caro - The Power Broker: Robert Moses and the Fall of New York
+      </p>
       <h3>Songs</h3>
       <p>Saba - Monday to Monday</p>
-      <p>Jean Sibelius (finnish composer)</p>
+      <p>Jean Sibelius (Finnish composer)</p>
       <p>Anything Nipsey Hussle - RIP.</p>
       <h3>Blogs</h3>
       <p>Patio11 - Kalzumeus</p>
@@ -27,7 +30,8 @@ const Content = () => (
       <p>Billions</p>
       <p>Desus and Mero</p>
       <p>House of Lies</p>
-      <h4>Last Updated: March 2021</h4>
+      <p>The West Wing (classic for a reason)</p>
+      <h4>Last Updated: December 2021</h4>
     </div>
   </Layout>
 );

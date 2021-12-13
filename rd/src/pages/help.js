@@ -12,9 +12,8 @@ const Help = () => (
       </h2>
       <h3>Agrarian Design Clients</h3>
       <p>
-        The lifeblood of any agency - introductions to execs at sustainable
-        companies who spend 4-10k/monthly on paid acq and who want to get to
-        40-100k/monthly.
+        The lifeblood of any business - introductions to execs at climate
+        companies who spend 20-50k per month on paid acquisition.
       </p>
       <p>
         DM me on twitter or email (dev@agrarian.design) - if we end up working
@@ -24,13 +23,11 @@ const Help = () => (
       <p>Always looking to make new friends and meet people in new scenes.</p>
       <h3>Intros to great media buyers, copywriters and marketers</h3>
       <p>
-        In the same vein as clients - agencies compete for the best talent. If
-        you know any great marketers who want to 100x their positive impact on
-        the planet, send &#39;em my way.
+        In the same vein as clients - we compete for the best talent. If you
+        know any great marketers who want to 100x their positive impact on the
+        planet, send &#39;em my way.
       </p>
-      <h3>Social media dopamine</h3>
-      <p>Always feels good :)</p>
-      <h4>Last Updated: March 2021</h4>
+      <h4>Last Updated: December 2021</h4>
     </div>
   </Layout>
 );

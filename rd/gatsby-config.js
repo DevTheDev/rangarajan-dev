@@ -10,7 +10,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-offline',
     'gatsby-transformer-json',
     {
       resolve: 'gatsby-transformer-remark',
@@ -84,6 +83,7 @@ module.exports = {
         theme_color_in_head: false,
       },
     },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {

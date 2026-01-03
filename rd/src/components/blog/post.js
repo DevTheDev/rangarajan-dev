@@ -10,7 +10,6 @@ import './blog.scss';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
 
   return (
     <Layout>
@@ -37,7 +36,7 @@ const BlogPostTemplate = ({ data }) => {
 };
 
 BlogPostTemplate.propTypes = {
-  data: PropTypes.object.isrequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default BlogPostTemplate;

@@ -21,7 +21,7 @@ export default function ToC({ headings }) {
   }
 
   return (
-    <div className="toc" items={values}>
+    <div className="toc">
       <div className="innerscroll">
         <Scrollspy items={values} currentClassName="is-current" offset={0}>
           {headings.map((heading) => {
@@ -51,7 +51,7 @@ export default function ToC({ headings }) {
 }
 
 ToC.propTypes = {
-  headings: PropTypes.object.isrequired,
+  headings: PropTypes.array.isRequired,
 };
 
 /** In order to make this work I need to have something like Julian does. 

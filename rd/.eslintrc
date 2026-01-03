@@ -1,5 +1,11 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
   "env": {
     "browser": true,
     "node": true
@@ -13,7 +19,8 @@
     ],
     "prettier/prettier": "warn",
     "react/prop-types": "warn",
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "react/no-unknown-property": "off"
   },
   "extends": [
     "eslint:recommended",

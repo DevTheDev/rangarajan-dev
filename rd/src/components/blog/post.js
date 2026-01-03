@@ -13,11 +13,6 @@ const BlogPostTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-        pathname={post.id}
-      />
       <ToC headings={post.headings}></ToC>
       <div className="blog">
         <div className="header">
@@ -41,6 +36,18 @@ BlogPostTemplate.propTypes = {
 
 export default BlogPostTemplate;
 
+// Gatsby Head API - replaces react-helmet
+export const Head = ({ data }) => {
+  const post = data.markdownRemark;
+  return (
+    <SEO
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+      pathname={post.fields?.slug}
+    />
+  );
+};
+
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
@@ -53,6 +60,9 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

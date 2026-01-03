@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ description, lang, meta, title, keywords, pathname }) => {
+// Hook to get site metadata for SEO
+export const useSiteMetadata = () => {
   const { site } = useStaticQuery(
     graphql`
-      query {
+      query SiteMetadataQuery {
         site {
           siteMetadata {
             title
@@ -21,89 +20,36 @@ const SEO = ({ description, lang, meta, title, keywords, pathname }) => {
       }
     `
   );
+  return site.siteMetadata;
+};
 
-  const metaDescription = description || site.siteMetadata.description;
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
+// SEO component for use in Gatsby Head API
+const SEO = ({ title, description, pathname, keywords = [], children }) => {
+  const siteMetadata = useSiteMetadata();
+
+  const metaDescription = description || siteMetadata.description;
+  const canonical = pathname ? `${siteMetadata.siteUrl}${pathname}` : null;
+  const fullTitle = title ? `${title} | ${siteMetadata.title}` : siteMetadata.title;
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      link={
-        canonical
-          ? [
-              {
-                rel: 'canonical',
-                href: canonical,
-              },
-            ]
-          : []
-      }
-      meta={[
-        {
-          name: 'description',
-          content: site.siteDescription,
-        },
-        {
-          property: 'og:title',
-          content: title,
-        },
-        {
-          property: 'og:description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:type',
-          content: 'website',
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary',
-        },
-        {
-          name: 'twitter:creator',
-          content: site.siteMetadata.social.twitter,
-        },
-        {
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          name: 'twitter:description',
-          content: metaDescription,
-        },
-      ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
-        )
-        .concat(meta)}
-    />
+    <>
+      <html lang="en" />
+      <title>{fullTitle}</title>
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={siteMetadata.social.twitter} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      {keywords.length > 0 && (
+        <meta name="keywords" content={keywords.join(', ')} />
+      )}
+      {canonical && <link rel="canonical" href={canonical} />}
+      {children}
+    </>
   );
-};
-
-SEO.defaultProps = {
-  lang: 'en',
-  meta: [],
-  description: '',
-  keywords: [],
-  pathname: '',
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  pathname: PropTypes.string,
-  title: PropTypes.string.isRequired,
 };
 
 export default SEO;

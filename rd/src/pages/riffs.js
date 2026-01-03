@@ -12,7 +12,6 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Dev Rangarajan's essays and riffs." />
       <div className="description">
         A collection of random riffs and semi processed thoughts. Generally more
         in depth than a tweet. Always happy to chat about any of these ideas -
@@ -41,11 +40,17 @@ const BlogIndex = ({ data }) => {
     </Layout>
   );
 };
+
 BlogIndex.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
 export default BlogIndex;
+
+// Gatsby Head API - replaces react-helmet
+export const Head = () => (
+  <SEO title="Dev Rangarajan's essays and riffs." />
+);
 
 export const query = graphql`
   query {

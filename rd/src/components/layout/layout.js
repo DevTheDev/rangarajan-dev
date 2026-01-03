@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-import Head from 'components/head';
 import Header from 'components/header';
 import GlobalStyle from 'global.css.js';
 
@@ -23,7 +22,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <Head />
       <Header title={data.site.siteMetadata.siteTitle} />
       {children}
       <div style={footerStyle}> Some images from icons8.com </div>

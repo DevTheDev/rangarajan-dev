@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { Container } from './nav.css';
-// import Image from 'gatsby-image';
 import { isMobile } from 'react-device-detect';
 
 const Nav = () => {

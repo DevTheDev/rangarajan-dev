@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Typing from 'react-typing-animation';
 
 import './hero.scss';
 import face from '../../../content/home/face-true.png';
 
-const Hero = ({ items }) => (
+const Hero = () => (
   <>
     <div className="hero-main">
       <div className="label">Hi, I&#39;m&nbsp; </div>
@@ -51,9 +50,5 @@ const Hero = ({ items }) => (
     <div className="projects-arrow">Projects ↓</div>
   </>
 );
-
-Hero.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
 
 export default Hero;

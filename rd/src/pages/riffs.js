@@ -48,9 +48,7 @@ BlogIndex.propTypes = {
 export default BlogIndex;
 
 // Gatsby Head API - replaces react-helmet
-export const Head = () => (
-  <SEO title="Dev Rangarajan's essays and riffs." />
-);
+export const Head = () => <SEO title="Dev Rangarajan's essays and riffs." />;
 
 export const query = graphql`
   query {

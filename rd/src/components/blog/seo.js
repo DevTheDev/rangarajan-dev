@@ -3,23 +3,21 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 // Hook to get site metadata for SEO
 export const useSiteMetadata = () => {
-  const { site } = useStaticQuery(
-    graphql`
-      query SiteMetadataQuery {
-        site {
-          siteMetadata {
-            title
-            description
-            social {
-              twitter
-            }
-            author
-            siteUrl
+  const { site } = useStaticQuery(graphql`
+    query SiteMetadataQuery {
+      site {
+        siteMetadata {
+          title
+          description
+          social {
+            twitter
           }
+          author
+          siteUrl
         }
       }
-    `
-  );
+    }
+  `);
   return site.siteMetadata;
 };
 
@@ -29,7 +27,9 @@ const SEO = ({ title, description, pathname, keywords = [], children }) => {
 
   const metaDescription = description || siteMetadata.description;
   const canonical = pathname ? `${siteMetadata.siteUrl}${pathname}` : null;
-  const fullTitle = title ? `${title} | ${siteMetadata.title}` : siteMetadata.title;
+  const fullTitle = title
+    ? `${title} | ${siteMetadata.title}`
+    : siteMetadata.title;
 
   return (
     <>

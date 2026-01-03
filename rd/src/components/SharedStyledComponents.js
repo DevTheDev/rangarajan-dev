@@ -30,7 +30,7 @@ export const StyledContentWrapperLeft = styled(StyledContentCenterWrapper)`
 `;
 
 export const StyledImageWrapper = styled.div`
-  max-width: ${props => props.maxWidth || 300}px;
+  max-width: ${(props) => props.maxWidth || 300}px;
   margin: 0 auto 1.45rem;
 `;
 
